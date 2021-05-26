@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+
+title: MigrationsKB
+description: The Knowledge Base of Migration related annotated Tweets.
+url: "https://migrationskb.github.io/MGKB"
+
