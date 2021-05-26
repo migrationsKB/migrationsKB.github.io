@@ -50,6 +50,12 @@ Paper
 ### Overall Schema
 ![](images/migrationKB_schema.png)
 
+### Schema for Economic Indicators
+![](images/fibo-schema.png)
+
+
+
+
 ## Correlations of the Negative Public Attitudes and The Economic Indicators
 More [plots for each destination country](stats.md)
 
