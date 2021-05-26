@@ -52,7 +52,22 @@ Paper
 
 ## Correlations of the Negative Public Attitudes and The Economic Indicators
 More [plots for each destination country](stats.md)
-![](images/stats/percentage_correlations/ALL.png)
+
+To learn the potential cause of the negative public attitudes towards migrations, the factors such as unemployment
+rate including youth unemployment rate and totla unemployment rate, and gross domestic product growth rate (GDPR) were studied.
+This data was collected from [Eurostat](https://ec.europa.eu/eurostat), [Statista](https://www.statista.com/),
+[UK Parliament](https://www.parliament.uk/), and [Office for National Statistics](https://www.ons.gov.uk/). 
+
+The following figure shows the comparison between the factors (such as youth unemployment rate, total unemployment rate,
+and real GDPR) and the negative attitudes (i.e., negative sentiment and hate speech) in all the extracted 
+tweets. On average in all 11 destination countries, the percentages of hate speech and negative sentiment of the public
+towards immigrations are negatively correlated with the real GDPR and positively correlated with total/youth
+unemployment rate, from 2013 to 2018 and from 2019 to 2020. In 2019, the percentages of hateful tweets and negative tweets
+are rapidly increased by about 2% and 1% respectively compared to 2018.
+
+
+![](images/stats/percentage_correlations/ALL.png). 
+
 
 ## Sparql Queries
 The dump for [MigrationsKB](data/migrationsKB_05222021_235316.tar.xz)
