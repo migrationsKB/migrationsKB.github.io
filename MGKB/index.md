@@ -11,11 +11,24 @@ Moreover, to associate and represent the potential economic and social factors d
 such as GDP Growth Rate, are connected with each Tweet in RDF using geographical and temporal dimensions.
 The user IDs and the tweet texts are encrypted for privacy purposes, while the tweet IDs are preserved.
 
- 
+
+ ## RDF/S Model
+### Overall Schema
+![](images/migrationKB_schema.png)
+
+### Schema for Economic Indicators
+![](images/fibo-schema.png)
+
 
 [Documentation of RDF Model](migrationsKB/documentation.html)
 
-[Code](https://github.com/migrationsKB/MGKB) 
+[Codes](https://github.com/migrationsKB/MGKB) 
+
+
+## Overall Framework
+![](images/overall-framework.png)
+
+
 
 ## Purpose
 * Provide query-able resource about public attitudes on social media towards migration
@@ -44,16 +57,6 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
   | Italy |	26620 |	64625|	83540 |	122960 |	128850|	59950|	43770 |	26535 |	556850 |	 
 
 
-## Overall Framework
-![](images/overall-framework.png)
-
-
-## RDF/S Model
-### Overall Schema
-![](images/migrationKB_schema.png)
-
-### Schema for Economic Indicators
-![](images/fibo-schema.png)
 
 
 
