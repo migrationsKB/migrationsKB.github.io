@@ -22,9 +22,7 @@ javac --version
 ```
 
 #### Donwload Blazegraph
-https://github.com/blazegraph/database/releases/tag/BLAZEGRAPH_2_1_6_RC
-  
-download ```blazegraph.jar```
+Go to [link](https://github.com/blazegraph/database/releases/tag/BLAZEGRAPH_2_1_6_RC), and download ```blazegraph.jar```
     
 #### Run Blazegraph
 ```
