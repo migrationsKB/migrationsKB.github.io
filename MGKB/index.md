@@ -7,12 +7,12 @@ filtered with 11 European countries of *the United Kingdom, Germany, Spain, Pola
 **MGKB** contains **entities**, **sentiments**, **hate speeches**, **topics**, **hashtags**, _encrypted user mentions_ in RDF format.
 The schema of **MGKB** is an extension of TweetsKB for migrations related information.
 Moreover, to associate and represent the potential economic and social factors driving the migration flows such as [**eurostat**](https://ec.europa.eu/eurostat/web/main/home), 
-[**statista**](https://www.statista.com/), etc. FIBO ontology I used. The extracted **economic indicators**,
+[**statista**](https://www.statista.com/), etc. FIBO ontology was used. The extracted **economic indicators**,
 such as GDP Growth Rate, are connected with each Tweet in RDF using geographical and temporal dimensions.
 The user IDs and the tweet texts are encrypted for privacy purposes, while the tweet IDs are preserved.
 
 
- ## RDF/S Model
+## RDF/S Model
 ### Overall Schema
 ![](images/migrationKB_schema.png)
 
