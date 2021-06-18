@@ -1,21 +1,22 @@
 ## Introduction
 
-**MigrationsKB** is a public RDF corpus of anonymized data for a collection of **Migration** related **annotated** tweets. 
-The dataset currently contains over **170 thousand** tweets, spaning over 7 years (January 2013 to December 2020), 
-filtered with 11 European countries of *United Kingdom, Germany, Spain, Poland, France, Sweden, Austria, Hungary, Switzerland, Netherlands and Italy*.
-**Metadata** information about the tweets, such as geo information (**place name**, **coordinates**, **country code**), 
-and the extracted **entities**, **sentiments**, **hate speeches**, **topics**, **hashtags**, _encrypted user mentions_ are stored in RDF, 
-based on and extended the displayed RDF/S vocabularies from [**TweetsKB**](https://data.gesis.org/tweetskb/).
-Moreover, to associate the potential economic and social factors driving the migration flows, the external databases such as 
-[**eurostat**](https://ec.europa.eu/eurostat/web/main/home), [**statista**](https://www.statista.com/) are used. The extracted 
-**economic indicators**, such as GDP Growth Rate, are connected with each Tweet in RDF using geographical and temporal dimensions.
-The user ids and the tweet texts are encrypted for privacy, while the tweet IDs are reserved for reproducibility of this study.
+**MigrationsKB(MGKB)** is a public Knowledge Base of anonymized **Migration** related **annotated** tweets.
+The MGKB currently contains over **170 thousand** tweets, spanning over 7 years (January 2013 to December 2020),
+filtered with 11 European countries of *the United Kingdom, Germany, Spain, Poland, France, Sweden, Austria, Hungary, Switzerland, Netherlands and Italy*.
+**Metadata** information about the tweets, such as Geo information (**place name**, **coordinates**, **country code**).
+**MGKB** contains **entities**, **sentiments**, **hate speeches**, **topics**, **hashtags**, _encrypted user mentions_ in RDF format.
+The schema of **MGKB** is an extension of TweetsKB for migrations related information.
+Moreover, to associate and represent the potential economic and social factors driving the migration flows such as [**eurostat**](https://ec.europa.eu/eurostat/web/main/home), 
+[**statista**](https://www.statista.com/), etc. FIBO ontology I used. The extracted **economic indicators**,
+such as GDP Growth Rate, are connected with each Tweet in RDF using geographical and temporal dimensions.
+The user IDs and the tweet texts are encrypted for privacy purposes, while the tweet IDs are preserved.
 
-Paper
  
-[Code](https://github.com/migrationsKB/MGKB) 
 
 [Documentation of RDF Model](migrationsKB/documentation.html)
+
+[Code](https://github.com/migrationsKB/MGKB) 
+
 ## Purpose
 * Provide query-able resource about public attitudes on social media towards migration
 * Provide an insight into which factors in terms of economic indicators are the driving factors of that attitude.
@@ -35,6 +36,7 @@ Paper
   | France 	| 66265 | 64310 | 76165 |	84270 |	99330 | 137665 | 151070 |	93470 | 772545 |
   |Sweden	| 54270 |	81185  | 162450 | 28795 | 26330 | 21560 | 26255 | 16225  | 417070 | 
   | United Kingdom  | 	30585  | 32785 | 40160 | 39735 | 34780	| 38840 |	46055 |	36041 |	298981 |
+  
   | Austria |	17500 |	28035 |	88160 |	42255  | 24715 |  13710 |	12860 | 14180 | 241415 | 
   | Hungary	| 18895 |	42775 | 177135  |	29430 |	3390  | 670	 | 500  |	115	 | 272910 | 
   | Switzerland	| 21305	 | 23560 | 39445 |	27140 |	18015 |	15160 |	14195 |	10990 |	169810 |
@@ -62,14 +64,15 @@ More [plots for each destination country](stats.md)
 To learn the potential cause of the negative public attitudes towards migrations, the factors such as unemployment
 rate including youth unemployment rate and totla unemployment rate, and gross domestic product growth rate (GDPR) were studied.
 This data was collected from [Eurostat](https://ec.europa.eu/eurostat), [Statista](https://www.statista.com/),
-[UK Parliament](https://www.parliament.uk/), and [Office for National Statistics](https://www.ons.gov.uk/). 
+[UK Parliament](https://www.parliament.uk/), and [Office for National Statistics](https://www.ons.gov.uk/).
 
 The following figure shows the comparison between the factors (such as youth unemployment rate, total unemployment rate,
-and real GDPR) and the negative attitudes (i.e., negative sentiment and hate speech) in all the extracted 
+and real GDPR) and the negative attitudes (i.e., negative sentiment and hate speech) in all the extracted
 tweets. On average in all 11 destination countries, the percentages of hate speech and negative sentiment of the public
-towards immigrations are negatively correlated with the real GDPR and positively correlated with total/youth
+towards immigration are negatively correlated with the real GDPR and positively correlated with total/youth
 unemployment rate, from 2013 to 2018 and from 2019 to 2020. In 2019, the percentages of hateful tweets and negative tweets
 are rapidly increased by about 2% and 1% respectively compared to 2018.
+
 
 
 ![](images/stats/percentage_correlations/ALL.png). 
@@ -102,7 +105,7 @@ prefix sioc_t: <http://rdfs.org/sioc/types#>
 prefix wna: <http://www.gsi.dit.upm.es/ontologies/wnaffect/ns#> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 ```
-* The following query retrieve a list of all the entitiy labels which contain "refugee" and its frequency of detected entity mentions.
+* The following query retrieve a list of all the entity labels which contain "refugee" and its frequency of detected entity mentions.
 ```sparql
 SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 	?tweet schema:mentions ?entity.
@@ -116,6 +119,7 @@ SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 
 * The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, 
   and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugee camp".
+
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 	?tweet schema:mentions ?entity.
@@ -131,7 +135,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 
 
-* The following query requests the top-10 hashtags co-occuring with the entity label containing "refugee".
+* The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee".
 
 ```sparql
 SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
@@ -146,7 +150,7 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 [comment]: <> (![]&#40;images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png&#41;)
 
-* The following query retrieves GDPR indicator values and the number of tweet hate speeches in United Kingdom.
+* The following query retrieves GDPR indicator values and the number of tweet hate speeches in the United Kingdom.
 ```sparql
 SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -184,7 +188,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 ```
 
 
-* The following query retrieves GDPR indicator values and the number of negative sentiment tweets in United Kingdom.
+* The following query retrieves GDPR indicator values and the number of negative sentiment tweets in the United Kingdom.
 ```sparql
 SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -201,7 +205,7 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 
 
 
-* The following query requests the top-10 hashtags co-occuring with the entity label containing "refugee camp".
+* The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee camp".
 
 ```sparql
 SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
@@ -239,6 +243,11 @@ SELECT (count(?tweet) as ?num)   where{
 	?uri a rdfs:Resource; rdfs:label ?x. FILTER(  lcase(str(?x))="zaatari refugee camp").
  }
 ```
+
+## MigrationsKB 
+
+
+
 
 
 ## About
