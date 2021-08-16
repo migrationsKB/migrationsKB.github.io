@@ -84,9 +84,12 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 
 
 ## Sparql Queries
-Download `nt` file for **MGKB** on Zenodo. 
+* Online SPARQL endpoint Query [example](virtuoso.md).
 
-Download and run [blazegraph](blazegraph.md)
+* Locally 
+  * Download `nt` file for **MGKB** on [Zenodo](https://zenodo.org/record/5205418#.YRomC3Uza0p). 
+  * Download and run [blazegraph](blazegraph.md)
+
 
 * Prefixes:
 ```sparql
