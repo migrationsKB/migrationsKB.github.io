@@ -27,7 +27,7 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 
 [Codes](https://github.com/migrationsKB/MGKB) 
 
-[Data](https://zenodo.org/record/5205418#.YRomC3Uza0p)
+[Data](https://zenodo.org/record/5206820#.YRqF1nUza0o)
 
 [SPARQL endpoint](https://mgkb.fiz-karlsruhe.de/sparql/)
 
@@ -90,7 +90,7 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 * Online SPARQL endpoint Query [example](virtuoso.md).
 
 * Locally 
-  * Download `nt` file for **MGKB** on [Zenodo](https://zenodo.org/record/5205418#.YRomC3Uza0p). 
+  * Download `nt` file for **MGKB** on [Zenodo](https://zenodo.org/record/5206820#.YRqF1nUza0o). 
   * Download and run [blazegraph](blazegraph.md)
 
 
