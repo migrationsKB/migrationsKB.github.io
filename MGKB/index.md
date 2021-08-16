@@ -119,9 +119,9 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
 } GROUP BY ?hashtagLabel ORDER BY DESC(?num) LIMIT 20
 ```
 
-[comment]: <> (![]&#40;images/sparql_query_results/top20_hashtags_refugee_immigrant.png&#41;)
+![](images/sparql_query_results/top20_hashtags_refugee_immigrant.png)
 
-<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" width="300px">
+[comment]: <> (<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" width="300px">)
 
 
 * The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
