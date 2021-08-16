@@ -1,7 +1,7 @@
 ## Introduction
 
 **MigrationsKB(MGKB)** is a public Knowledge Base of anonymized **Migration** related **annotated** tweets.
-The MGKB currently contains over **170 thousand** tweets, spanning over 7 years (January 2013 to December 2020),
+The MGKB currently contains over **200 thousand** tweets, spanning over 9 years (January 2013 to July 2021),
 filtered with 11 European countries of *the United Kingdom, Germany, Spain, Poland, France, Sweden, Austria, Hungary, Switzerland, Netherlands and Italy*.
 **Metadata** information about the tweets, such as Geo information (**place name**, **coordinates**, **country code**).
 **MGKB** contains **entities**, **sentiments**, **hate speeches**, **topics**, **hashtags**, _encrypted user mentions_ in RDF format.
@@ -24,6 +24,9 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 
 [Codes](https://github.com/migrationsKB/MGKB) 
 
+[Data](https://zenodo.org/record/5205418#.YRomC3Uza0p)
+
+[SPARQL endpoint](https://mgkb.fiz-karlsruhe.de/sparql/)
 
 ## Overall Framework
 ![](images/overall-framework.png)
@@ -49,7 +52,6 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
   | France 	| 66265 | 64310 | 76165 |	84270 |	99330 | 137665 | 151070 |	93470 | 772545 |
   |Sweden	| 54270 |	81185  | 162450 | 28795 | 26330 | 21560 | 26255 | 16225  | 417070 | 
   | United Kingdom  | 	30585  | 32785 | 40160 | 39735 | 34780	| 38840 |	46055 |	36041 |	298981 |
-  
   | Austria |	17500 |	28035 |	88160 |	42255  | 24715 |  13710 |	12860 | 14180 | 241415 | 
   | Hungary	| 18895 |	42775 | 177135  |	29430 |	3390  | 670	 | 500  |	115	 | 272910 | 
   | Switzerland	| 21305	 | 23560 | 39445 |	27140 |	18015 |	15160 |	14195 |	10990 |	169810 |
@@ -82,7 +84,7 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 
 
 ## Sparql Queries
-The dump for [MigrationsKB](data/migrationsKB_05222021_235316.tar.xz)
+Download `nt` file for **MGKB** on Zenodo. 
 
 Download and run [blazegraph](blazegraph.md)
 
@@ -108,7 +110,17 @@ prefix sioc_t: <http://rdfs.org/sioc/types#>
 prefix wna: <http://www.gsi.dit.upm.es/ontologies/wnaffect/ns#> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 ```
-* The following query retrieve a list of all the entity labels which contain "refugee" and its frequency of detected entity mentions.
+
+* The following query retrieve a list of top 20 hashtags which contain "refugee" or "immigrant".
+```sparql 
+SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
+  ?tweet schema:mentions ?hashtag.
+  ?hashtag a sioc_t:Tag ; rdfs:label ?hashtagLabel.  FILTER( regex(?hashtagLabel, "refugee", "i") || lcase(str(?hashtagLabel))="refugee" ||  regex(?hashtagLabel, "immigrant", "i") || lcase(str(?hashtagLabel))="immigrant").
+} GROUP BY ?hashtagLabel ORDER BY DESC(?num) LIMIT 20
+```
+![](images/sparql_query_results/top20_hashtags_refugee_immigrant.png)
+
+* The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
 ```sparql
 SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 	?tweet schema:mentions ?entity.
@@ -183,8 +195,9 @@ SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?nu
   ?tweet onyx:hasEmotionSet ?y.
   ?y a onyx:EmotionSet; onyx:hasEmotion ?z.
   ?z a onyx:Emotion; onyx:hasEmotionCategory wna:hate.
- }GROUP BY ?year ?avgIndicatorValue ORDER BY DESC(?year)
+ }GROUP BY ?year ORDER BY DESC(?year)
 ```
+
 ![](images/sparql_query_results/avgRGDPR_hate.png)
 
 
