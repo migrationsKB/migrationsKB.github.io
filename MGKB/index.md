@@ -118,7 +118,11 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
   ?hashtag a sioc_t:Tag ; rdfs:label ?hashtagLabel.  FILTER( regex(?hashtagLabel, "refugee", "i") || lcase(str(?hashtagLabel))="refugee" ||  regex(?hashtagLabel, "immigrant", "i") || lcase(str(?hashtagLabel))="immigrant").
 } GROUP BY ?hashtagLabel ORDER BY DESC(?num) LIMIT 20
 ```
-![](images/sparql_query_results/top20_hashtags_refugee_immigrant.png)
+
+[comment]: <> (![]&#40;images/sparql_query_results/top20_hashtags_refugee_immigrant.png&#41;)
+
+<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" width="300px">
+
 
 * The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
 ```sparql
