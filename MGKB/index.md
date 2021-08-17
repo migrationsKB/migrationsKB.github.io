@@ -41,7 +41,7 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 * Provide an insight into which factors in terms of economic indicators are the driving factors of that attitude.
 
 ## Geo Map of The Tweets
-<iframe width="100%" height="520" frameborder="0" src="https://migrationskb.carto.com/builder/69edca56-f1b1-4add-9b2d-ef1ab1e6cf58/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width="100%" height="520" frameborder="0" src="https://migrationskb.carto.com/builder/55b7655b-30de-41c9-9e09-2ab30284c225/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 [Download `MapOfTweets`](data/MapOfTweets.carto)
 
 ## Statistics of the EU countries with the most first time asylum applicants
