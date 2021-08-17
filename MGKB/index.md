@@ -295,9 +295,9 @@ SELECT (count(?tweet) as ?num)   where{
 
 
 ## Authors
-* Yiyi Chen, Harald Sack, Mehwish Alam
+* **Yiyi Chen, Harald Sack, Mehwish Alam**
 * E-Mail: firstname.lastname@fiz-karlsruhe.de
-* FIZ Karlsruhe, KIT Germany
+* Affiliation: FIZ Karlsruhe, KIT Germany
 
 
 ## Acknowledgement
