@@ -294,14 +294,21 @@ SELECT (count(?tweet) as ?num)   where{
 ![](images/sparql_query_results/num_of_tweets_entity_zaatari.png)
 
 
-## Authors
-* **Yiyi Chen, Harald Sack, Mehwish Alam**
-* E-Mail: firstname.lastname@fiz-karlsruhe.de
-* Affiliation: FIZ Karlsruhe, KIT Germany
+## Citation
+```
+@misc{chen2021migrationskb,
+      title={MigrationsKB: A Knowledge Base of Public Attitudes towards Migrations and their Driving Factors}, 
+      author={Yiyi Chen and Harald Sack and Mehwish Alam},
+      year={2021},
+      eprint={2108.07593},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 
 ## Acknowledgement
-This work is a part of [ITFlows project](https://www.itflows.eu). This project has received funding from the European Union’s Horizon 2020research and innovation programme under grant agreement No 882986.
+This work is a part of [ITFlows project](https://www.itflows.eu). This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 882986.
 
 
 ## License
