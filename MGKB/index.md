@@ -19,8 +19,47 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 ### Overall Schema
 ![](images/migrationKB_schema.png)
 
-### Schema for Economic Indicators
+### Schema for Economic Indicators and Provenance Information
 ![](images/fibo-schema.png)
+<details>
+<summary> <b> Financial Industry Business Ontology (FIBO)</b> representing  <b>Economic Indicators of EU</b></summary>
+<ul>
+<li>The class <tt>fibo-ind-ei-ei:GrossDomesticProduct</tt> represents the GDPR of the country of the tweet in a certain year, 
+which are specified by the properties <tt>schema:addressCountry<\tt> 
+and  <tt>dc:date</tt>from DCMI, and the value of this indicator is represented by
+<tt>fibo-ind-ei-ei:hasIndicatorValue</tt> </li>
+
+<li>
+The class <tt>fibo-ind-ei-ei:UnemploymentRate</tt> represents the unemployment rate in the country of
+the tweet in a certain year, represented with the help of the same properties, 
+i.e.,  <tt>schema:addressCountry</tt>, <tt>dc:date</tt>, and <tt>fibo-ind-ei-ei:hasIndicatorValue</tt>.</li>
+
+<li>The class <tt>fibo-ind-ei-ei:UnemployedPopulation</tt> is used to specify the population of the unemployment rate. </li>
+<li>The class <tt>fibo-fnd-dt-fd:ExplicitDate</tt> represents the date when the statistics are last updated as a literal with the help of the property <tt>fibo-fnd-dt-fd:hasDateValue</tt>.</li>
+<li>The property <tt>fibo-fnd-rel-rel:isCharacterizedBy</tt>  is used to associate a tweet with the economic indicators.</li>
+</ul>
+</details>
+
+<details>
+<summary>
+<b>PROV-O</b> representing <b>Provenance Information</b>
+
+<p>To represent the provenance information about the economic indicators, i.e., Eurostat, Statista, UK parliament, and Office of National Statistics, PROV-O is used. The class <tt>prov:Activity</tt> defines an activity that occurs over a period of time and acts upon entities, which are defined by the class <tt>prov:Entity<\tt>. The class <tt>fibo-fnd-arr-asmt:AssessmentActivity</tt> represents an assessment activity involving the evaluation and estimation of the economic indicators, which is a subclass of the class <tt>prov:Activity</tt>.
+The class  <tt>prov:Organization</tt> represents a governmental organization or a company that is associated with the assessment activity, which is a subclass of the class <tt>prov:Agent</tt>. </p>
+</summary>
+</details>
+
+<details>
+<summary>Further extensions</summary>
+<ul>
+<li><tt>dc:subject</tt> represents a topic of a tweet resulting from topic modeling.</li>
+<li> <tt>wna:neutral-emotion</tt>  represents the neutral sentiment of the tweet by applying sentiment analysis.</li>
+<li> <tt> wna:hate</tt>, <tt>mgkb:offensive</tt> and <tt> mgkb:normal</tt> represent the hate speeches, offensive speeches and normal speeches from hate speech detection of the tweets.</li>
+<li> <tt>schema:ReplyAction</tt> represents the action of reply regarding a tweet.</li>
+<li> <tt>mgkb:EconomicIndicators</tt> represents the economic indicators, which has the subclasses <tt>fibo-ind-ei-ei:GrossDomesticProduct</tt> and <tt>fibo-ind-ei-ei:UnemploymentRate</tt>.</li>
+<li><tt>t mgkb:YouthUnemploymentRate</tt> and <tt>mgkb:TotalUnemploymentRate</tt> represent the unemployment rates with respect to the population, i.e., the youth unemployment population and the total unemployed population.</li>
+</ul>
+</details>
 
 
 :clipboard: [Documentation of RDF Model](migrationsKB/documentation.html)
