@@ -77,10 +77,15 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 #### Selecting Migration-related Tweets
 <details>
 <summary>Detail</summary>
-* Green referes to migration-related topics, and orange refers to other topics. 
+<p>
+Green referes to migration-related topics, and orange refers to other topics. 
 MGPS refers to the maximal migration-related topic probaiblity score.
 
-![](images/tm_filter/tweet_filtering.png)
+<a href="images/tm_filter/tweet_filtering.png">
+<img src="images/tm_filter/tweet_filtering.png" alt="tweet filtering">
+</a>
+
+[comment]: <> (![]&#40;images/tm_filter/tweet_filtering.png&#41;)
 
 The tweets are then refined based on topic embeddings.
 For each topic, the [top 20 words](https://bit.ly/2SZgpKb) (ranked by their probability) are 
@@ -96,6 +101,9 @@ For this tweet, it has the **maximal migration-related topic probability score (
 
 By manual evaluation, the threshold for reserving the tweets by the maximal probability score is set to 0.45. Hence, 
 the tweet showed in the Figure is reserved for further analysis.
+
+</p>
+
 </details>
 
 
