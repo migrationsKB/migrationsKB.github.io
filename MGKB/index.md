@@ -277,7 +277,7 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 ```
 
 [comment]: <> (![]&#40;images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png&#41;)
-<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png" width="400px" />
+<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png" width="300px" />
 
 * The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, 
   and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugeecamp".
@@ -306,8 +306,9 @@ SELECT (count(?tweet) as ?num)   where{
  }
 ```
 
-[comment]: <> (![]&#40;images/sparql_query_results/num_of_tweets_entity_zaatari.png&#41;)
-<img src="images/sparql_query_results/num_of_tweets_entity_zaatari.png" width="400px" />
+![](images/sparql_query_results/num_of_tweets_entity_zaatari.png)
+
+[comment]: <> (<img src="images/sparql_query_results/num_of_tweets_entity_zaatari.png" width="400px" />)
 
 ## Citation
 ```
