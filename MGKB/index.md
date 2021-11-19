@@ -23,13 +23,15 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 ![](images/fibo-schema.png)
 
 
-[Documentation of RDF Model](migrationsKB/documentation.html)
+[:clipboard: Documentation of RDF Model](migrationsKB/documentation.html)
 
-[Codes](https://github.com/migrationsKB/MGKB) 
+[:pencil: Codes](https://github.com/migrationsKB/MGKB) 
 
-[Data](https://zenodo.org/record/5206820#.YRqF1nUza0o)
+[:open_file_folder: Data](https://zenodo.org/record/5206820#.YRqF1nUza0o)
 
-[SPARQL endpoint](https://mgkb.fiz-karlsruhe.de/sparql/)
+[:question: SPARQL endpoint](https://mgkb.fiz-karlsruhe.de/sparql/)
+
+[:page_with_curl: Technical Report (arXiv)](https://arxiv.org/pdf/2108.07593.pdf) 
 
 ## Overall Framework
 ![](images/overall-framework.png)
@@ -87,7 +89,7 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 
 
 ## Sparql Queries
-* Online SPARQL endpoint Query [example](virtuoso.md).
+* **Online SPARQL endpoint Query [example](virtuoso.md)**.
 
 * Locally 
   * Download `nt` file for **MGKB** on [Zenodo](https://zenodo.org/record/5206820#.YRqF1nUza0o). 
@@ -125,9 +127,10 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
 } GROUP BY ?hashtagLabel ORDER BY DESC(?num) LIMIT 20
 ```
 
+[comment]: <> (<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" alt="hashtags" width="200" />)
 ![](images/sparql_query_results/top20_hashtags_refugee_immigrant.png)
 
-[comment]: <> (<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" width="300px">)
+<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" width="300px">
 
 
 * The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
