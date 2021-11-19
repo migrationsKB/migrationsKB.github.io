@@ -21,11 +21,12 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 
 ### Schema for Economic Indicators and Provenance Information
 ![](images/fibo-schema.png)
+
 <details>
 <summary> <b> Financial Industry Business Ontology (FIBO)</b> representing  <b>Economic Indicators of EU</b></summary>
 <ul>
 <li>The class <tt>fibo-ind-ei-ei:GrossDomesticProduct</tt> represents the GDPR of the country of the tweet in a certain year, 
-which are specified by the properties <tt>schema:addressCountry<\tt> 
+which are specified by the properties <tt>schema:addressCountry</tt> 
 and  <tt>dc:date</tt>from DCMI, and the value of this indicator is represented by
 <tt>fibo-ind-ei-ei:hasIndicatorValue</tt> </li>
 
@@ -44,7 +45,7 @@ i.e.,  <tt>schema:addressCountry</tt>, <tt>dc:date</tt>, and <tt>fibo-ind-ei-ei:
 <summary>
 <b>PROV-O</b> representing <b>Provenance Information</b>
 
-<p>To represent the provenance information about the economic indicators, i.e., Eurostat, Statista, UK parliament, and Office of National Statistics, PROV-O is used. The class <tt>prov:Activity</tt> defines an activity that occurs over a period of time and acts upon entities, which are defined by the class <tt>prov:Entity<\tt>. The class <tt>fibo-fnd-arr-asmt:AssessmentActivity</tt> represents an assessment activity involving the evaluation and estimation of the economic indicators, which is a subclass of the class <tt>prov:Activity</tt>.
+<p>To represent the provenance information about the economic indicators, i.e., Eurostat, Statista, UK parliament, and Office of National Statistics, PROV-O is used. The class <tt>prov:Activity</tt> defines an activity that occurs over a period of time and acts upon entities, which are defined by the class <tt>prov:Entity</tt>. The class <tt>fibo-fnd-arr-asmt:AssessmentActivity</tt> represents an assessment activity involving the evaluation and estimation of the economic indicators, which is a subclass of the class <tt>prov:Activity</tt>.
 The class  <tt>prov:Organization</tt> represents a governmental organization or a company that is associated with the assessment activity, which is a subclass of the class <tt>prov:Agent</tt>. </p>
 </summary>
 </details>
