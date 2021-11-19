@@ -10,92 +10,67 @@ category:posts
 
 * Germany 
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/DE.png)
+<p><img src="images/stats/percentage_correlations/DE.png" alt=""></p>
 
 </details>
 
 * Austria
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/AT.png)
+<p><img src="images/stats/percentage_correlations/AT.png" alt=""></p>
 
 </details>
 
 * Switzerland
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/CH.png)
-
+<p><img src="images/stats/percentage_correlations/CH.png" alt=""></p>
 </details>
 
 
 * Spain 
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/ES.png)
-
+<p><img src="images/stats/percentage_correlations/ES.png" alt=""></p>
 </details>
 
 
 * France
 
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/FR.png)
-
+<p><img src="images/stats/percentage_correlations/FR.png" alt=""></p>
 </details>
 
 
 * United Kingdom
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/GB.png)
-
+<p><img src="images/stats/percentage_correlations/GB.png" alt=""></p>
 </details>
 
 * Italy 
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/IT.png)
-
+<p><img src="images/stats/percentage_correlations/IT.png" alt=""></p>
 </details>
 
 * Netherlands
 <details>
-<summary> Figure </summary>
+<p><img src="images/stats/percentage_correlations/NL.png" alt=""></p>
 
-![](images/stats/percentage_correlations/NL.png)
 
 </details>
 
 * Poland
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/PL.png)
+<p><img src="images/stats/percentage_correlations/PL.png" alt=""></p>
 
 </details>
 
 * Sweden
 <details>
-<summary> Figure </summary>
+<p><img src="images/stats/percentage_correlations/SE.png" alt=""></p>
 
-![](images/stats/percentage_correlations/SE.png)
 
 </details>
 
 * Hungary
 <details>
-<summary> Figure </summary>
-
-![](images/stats/percentage_correlations/HU.png)
+<p><img src="images/stats/percentage_correlations/HU.png" alt=""></p>
 
 </details>

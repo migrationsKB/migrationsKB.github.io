@@ -54,23 +54,187 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 <details>
 <summary>Table</summary>
 
-* 
-  |Country | 2013 | 2014 | 2015 |	2016  | 2017 |	2018 |	2019 |	2020 |	SUM | 
-  | ---  | --- | ---  | ---     | ---   | ---    | ---  | ---   | ---  |---|
-  | Germany |	126705 |	202645 |	476510 | 745160 |	222565 |	184180 |	165615 |	121955 |	2245335 |
-  | Spain	| 4485  |	5615 |	14780 |	15755 |	36610  | 54050  |	117800 |	88530 |	337625 |
-  | Poland | 15240 |	8020 |	12190 |	12305 |	5045 |	4110 |	4070 |	2785 |	63765 |
-  | France 	| 66265 | 64310 | 76165 |	84270 |	99330 | 137665 | 151070 |	93470 | 772545 |
-  |Sweden	| 54270 |	81185  | 162450 | 28795 | 26330 | 21560 | 26255 | 16225  | 417070 | 
-  | United Kingdom  | 	30585  | 32785 | 40160 | 39735 | 34780	| 38840 |	46055 |	36041 |	298981 |
-  | Austria |	17500 |	28035 |	88160 |	42255  | 24715 |  13710 |	12860 | 14180 | 241415 | 
-  | Hungary	| 18895 |	42775 | 177135  |	29430 |	3390  | 670	 | 500  |	115	 | 272910 | 
-  | Switzerland	| 21305	 | 23560 | 39445 |	27140 |	18015 |	15160 |	14195 |	10990 |	169810 |
-  | Netherlands	| 13065 | 24495  |	44970 | 20945 |	18210|24025 |	25200 |	15255 |	186165 |
-  | Italy |	26620 |	64625|	83540 |	122960 |	128850|	59950|	43770 |	26535 |	556850 |	 
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+<th>2016</th>
+<th>2017</th>
+<th>2018</th>
+<th>2019</th>
+<th>2020</th>
+<th>SUM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Germany</td>
+<td>126705</td>
+<td>202645</td>
+<td>476510</td>
+<td>745160</td>
+<td>222565</td>
+<td>184180</td>
+<td>165615</td>
+<td>121955</td>
+<td>2245335</td>
+</tr>
+<tr>
+<td>Spain</td>
+<td>4485</td>
+<td>5615</td>
+<td>14780</td>
+<td>15755</td>
+<td>36610</td>
+<td>54050</td>
+<td>117800</td>
+<td>88530</td>
+<td>337625</td>
+</tr>
+<tr>
+<td>Poland</td>
+<td>15240</td>
+<td>8020</td>
+<td>12190</td>
+<td>12305</td>
+<td>5045</td>
+<td>4110</td>
+<td>4070</td>
+<td>2785</td>
+<td>63765</td>
+</tr>
+<tr>
+<td>France</td>
+<td>66265</td>
+<td>64310</td>
+<td>76165</td>
+<td>84270</td>
+<td>99330</td>
+<td>137665</td>
+<td>151070</td>
+<td>93470</td>
+<td>772545</td>
+</tr>
+<tr>
+<td>Sweden</td>
+<td>54270</td>
+<td>81185</td>
+<td>162450</td>
+<td>28795</td>
+<td>26330</td>
+<td>21560</td>
+<td>26255</td>
+<td>16225</td>
+<td>417070</td>
+</tr>
+<tr>
+<td>United Kingdom</td>
+<td>30585</td>
+<td>32785</td>
+<td>40160</td>
+<td>39735</td>
+<td>34780</td>
+<td>38840</td>
+<td>46055</td>
+<td>36041</td>
+<td>298981</td>
+</tr>
+<tr>
+<td>Austria</td>
+<td>17500</td>
+<td>28035</td>
+<td>88160</td>
+<td>42255</td>
+<td>24715</td>
+<td>13710</td>
+<td>12860</td>
+<td>14180</td>
+<td>241415</td>
+</tr>
+<tr>
+<td>Hungary</td>
+<td>18895</td>
+<td>42775</td>
+<td>177135</td>
+<td>29430</td>
+<td>3390</td>
+<td>670</td>
+<td>500</td>
+<td>115</td>
+<td>272910</td>
+</tr>
+<tr>
+<td>Switzerland</td>
+<td>21305</td>
+<td>23560</td>
+<td>39445</td>
+<td>27140</td>
+<td>18015</td>
+<td>15160</td>
+<td>14195</td>
+<td>10990</td>
+<td>169810</td>
+</tr>
+<tr>
+<td>Netherlands</td>
+<td>13065</td>
+<td>24495</td>
+<td>44970</td>
+<td>20945</td>
+<td>18210</td>
+<td>24025</td>
+<td>25200</td>
+<td>15255</td>
+<td>186165</td>
+</tr>
+<tr>
+<td>Italy</td>
+<td>26620</td>
+<td>64625</td>
+<td>83540</td>
+<td>122960</td>
+<td>128850</td>
+<td>59950</td>
+<td>43770</td>
+<td>26535</td>
+<td>556850</td>
+</tr>
+</tbody>
+</table>
 
 
 </details>
+
+[comment]: <> (* )
+
+[comment]: <> (  |Country | 2013 | 2014 | 2015 |	2016  | 2017 |	2018 |	2019 |	2020 |	SUM | )
+
+[comment]: <> (  | ---  | --- | ---  | ---     | ---   | ---    | ---  | ---   | ---  |---|)
+
+[comment]: <> (  | Germany |	126705 |	202645 |	476510 | 745160 |	222565 |	184180 |	165615 |	121955 |	2245335 |)
+
+[comment]: <> (  | Spain	| 4485  |	5615 |	14780 |	15755 |	36610  | 54050  |	117800 |	88530 |	337625 |)
+
+[comment]: <> (  | Poland | 15240 |	8020 |	12190 |	12305 |	5045 |	4110 |	4070 |	2785 |	63765 |)
+
+[comment]: <> (  | France 	| 66265 | 64310 | 76165 |	84270 |	99330 | 137665 | 151070 |	93470 | 772545 |)
+
+[comment]: <> (  |Sweden	| 54270 |	81185  | 162450 | 28795 | 26330 | 21560 | 26255 | 16225  | 417070 | )
+
+[comment]: <> (  | United Kingdom  | 	30585  | 32785 | 40160 | 39735 | 34780	| 38840 |	46055 |	36041 |	298981 |)
+
+[comment]: <> (  | Austria |	17500 |	28035 |	88160 |	42255  | 24715 |  13710 |	12860 | 14180 | 241415 | )
+
+[comment]: <> (  | Hungary	| 18895 |	42775 | 177135  |	29430 |	3390  | 670	 | 500  |	115	 | 272910 | )
+
+[comment]: <> (  | Switzerland	| 21305	 | 23560 | 39445 |	27140 |	18015 |	15160 |	14195 |	10990 |	169810 |)
+
+[comment]: <> (  | Netherlands	| 13065 | 24495  |	44970 | 20945 |	18210|24025 |	25200 |	15255 |	186165 |)
+
+[comment]: <> (  | Italy |	26620 |	64625|	83540 |	122960 |	128850|	59950|	43770 |	26535 |	556850 |	 )
 
 ### 2. Statistics of Tweets before and after ETM
 
@@ -85,13 +249,11 @@ MGPS refers to the maximal migration-related topic probaiblity score.
 <img src="images/tm_filter/tweet_filtering.png" alt="tweet filtering">
 </a>
 
-[comment]: <> (![]&#40;images/tm_filter/tweet_filtering.png&#41;)
-
 The tweets are then refined based on topic embeddings.
-For each topic, the [top 20 words](https://bit.ly/2SZgpKb) (ranked by their probability) are 
+For each topic, the  <a href="https://bit.ly/2SZgpKb">top 20 words</a> (ranked by their probability) are 
 selected as representatives of the topic. 
 These words are then manually verified based on their relevance to the topic 
-of migration, accordingly, [the migration-related topics](https://bit.ly/30z25wp) are 
+of migration, accordingly, <a href="https://bit.ly/30z25wp">the migration-related topics</a> are 
 chosen. 
 The migration-related tweets are chosen with the help of the probabilities 
 associated to all the topics. Regarding the chosen topics, 
@@ -101,27 +263,23 @@ For this tweet, it has the **maximal migration-related topic probability score (
 
 By manual evaluation, the threshold for reserving the tweets by the maximal probability score is set to 0.45. Hence, 
 the tweet showed in the Figure is reserved for further analysis.
-
 </p>
-
 </details>
-
-
 
 
 
 <details>
 <summary>The distribution of maximal probability scores of tweets regarding migration-related topics before filtering</summary>
-
-![](images/tm_filter/dist_topic_max_scores_50.png)
-
+<a href="images/tm_filter/dist_topic_max_scores_50.png">
+<img src="images/tm_filter/dist_topic_max_scores_50.png" alt="dist_before_filtering">
+</a>
 </details>
 
 <details>
 <summary>The distribution of maximal probability scores of tweets regarding migration-related topics after filtering</summary>
-
-![](images/tm_filter/dist_topic_max_scores_50_t4.5.png)
-
+<a href="images/tm_filter/dist_topic_max_scores_50_t4.5.png">
+<img src="images/tm_filter/dist_topic_max_scores_50_t4.5.png" alt="dist_after_filtering">
+</a>
 </details>
 
 
@@ -142,9 +300,9 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 
 <details>
 <summary>Figure</summary>
-
-![](images/stats/percentage_correlations/ALL.png).
-
+<a href="images/stats/percentage_correlations/ALL.png">
+<img src="images/stats/percentage_correlations/ALL.png" alt="percentage_coorelations">
+</a>
 </details>
 
 
@@ -194,9 +352,9 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 <details>
 <summary> Answer </summary>
-
-![](images/sparql_query_results/top20_hashtags_refugee_immigrant.png)
-
+<a href="images/sparql_query_results/top20_hashtags_refugee_immigrant.png">
+<img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" alt="top20_hashtags_refugee_immigrant">
+</a>
 </details>
 
 
@@ -210,9 +368,9 @@ SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/entity_mentions_containing_refugee.png)
-
+<a href="images/sparql_query_results/entity_mentions_containing_refugee.png">
+<img src="images/sparql_query_results/entity_mentions_containing_refugee.png" alt="entity_mentions_containing_refugee">
+</a>
 </details>
 
 [comment]: <> (<img src="images/sparql_query_results/entity_mentions_containing_refugee.png" width="400px"/>)
@@ -234,8 +392,9 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/emotions_entity_containing_refugee_camp.png)
+<a href="images/sparql_query_results/emotions_entity_containing_refugee_camp.png">
+<img src="images/sparql_query_results/emotions_entity_containing_refugee_camp.png" alt="emotions_entity_containing_refugee_camp">
+</a>
 
 </details>
 
@@ -256,9 +415,9 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png)
-
+<a href="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png">
+<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png" alt="top10_coocur_hashtags_with_entity_refugee">
+</a>
 </details>
 
 [comment]: <> (<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png" width="400px" />)
@@ -281,9 +440,9 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/gdpr_hate_speech_GB.png)
-
+<a href="images/sparql_query_results/gdpr_hate_speech_GB.png">
+<img src="images/sparql_query_results/gdpr_hate_speech_GB.png" alt="gdpr_hate_speech_GB">
+</a>
 </details>
 
 [comment]: <> (<img src="images/sparql_query_results/gdpr_hate_speech_GB.png" width="400px" />)
@@ -303,8 +462,9 @@ SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?nu
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/avgRGDPR_hate.png)
+<a href="images/sparql_query_results/avgRGDPR_hate.png">
+<img src="images/sparql_query_results/avgRGDPR_hate.png" alt="avgRGDPR_hate">
+</a>
 
 </details>
 
@@ -320,8 +480,9 @@ SELECT ?EntityLabel(count(?EntityLabel) as ?NumberOfMentions)   where{
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/num_of_entities_refugee_camp.png)
+<a href="images/sparql_query_results/num_of_entities_refugee_camp.png">
+<img src="images/sparql_query_results/num_of_entities_refugee_camp.png" alt="num_of_entities_refugee_camp">
+</a>
 
 </details>
 
@@ -341,9 +502,9 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/emotion_category_hashtag_containing_refugee.png)
-
+<a href="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png">
+<img src="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png" alt="emotion_category_hashtag_containing_refugee">
+</a>
 </details>
 
 [comment]: <> (<img src="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png" width="400px" />)
@@ -363,9 +524,9 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/negative-emotion-gdpr-GB.png)
-
+<a href="images/sparql_query_results/negative-emotion-gdpr-GB.png">
+<img src="images/sparql_query_results/negative-emotion-gdpr-GB.png" alt="negative-emotion-gdpr-GB">
+</a>
 </details>
 
 [comment]: <> (<img src="images/sparql_query_results/negative-emotion-gdpr-GB.png" width="400px" />)
@@ -385,8 +546,9 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png)
+<a href="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png">
+<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png" alt="top10_coocur_hashtags_with_entity_refugee_camp">
+</a>
 
 </details>
 
@@ -407,8 +569,9 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png)
+<a href="images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png">
+<img src="images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png" alt="emotion_categories_hashtag_refugee_camp">
+</a>
 
 </details>
 
@@ -425,8 +588,9 @@ SELECT (count(?tweet) as ?num)   where{
 ```
 <details>
 <summary>Answer</summary>
-
-![](images/sparql_query_results/num_of_tweets_entity_zaatari.png)
+<a href="images/sparql_query_results/num_of_tweets_entity_zaatari.png">
+<img src="images/sparql_query_results/num_of_tweets_entity_zaatari.png" alt="num_of_tweets_entity_zaatari">
+</a>
 
 </details>
 
