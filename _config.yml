@@ -5,3 +5,6 @@ description: The Knowledge Base of Migration related annotated Tweets.
 url: "https://migrationskb.github.io/MGKB"
 
 permalink: /:category/:title
+
+plugins:
+  - jemoji

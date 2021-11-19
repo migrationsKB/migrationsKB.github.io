@@ -2,6 +2,9 @@
 
 source "https://rubygems.org"
 gem 'github-pages'
-# git_source(:github) { |MigrationsKB| "https://github.com/#{repo_name}" }
+gem 'jemoji'
 
+
+
+# git_source(:github) { |MigrationsKB| "https://github.com/#{repo_name}" }
 # gem "rails"
