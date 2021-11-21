@@ -23,7 +23,7 @@ The user IDs and the tweet texts are encrypted for privacy purposes, while the t
 ![](images/fibo-schema.png)
 
 <details>
-<summary> <b> Financial Industry Business Ontology (FIBO)</b> representing  <b>Economic Indicators of EU</b></summary>
+<summary> <b style="background-color: lightgrey"> Financial Industry Business Ontology (FIBO) representing Economic Indicators of EU</b></summary>
 <ul>
 <li>The class <tt>fibo-ind-ei-ei:GrossDomesticProduct</tt> represents the GDPR of the country of the tweet in a certain year, 
 which are specified by the properties <tt>schema:addressCountry</tt> 
@@ -43,7 +43,7 @@ i.e.,  <tt>schema:addressCountry</tt>, <tt>dc:date</tt>, and <tt>fibo-ind-ei-ei:
 
 <details>
 <summary>
-<b>PROV-O</b> representing <b>Provenance Information</b>
+<b style="background-color: lightgrey">PROV-O representing Provenance Information</b>
 </summary>
 <p>To represent the provenance information about the economic indicators, i.e., Eurostat, Statista, UK parliament, and Office of National Statistics, PROV-O is used. The class <tt>prov:Activity</tt> defines an activity that occurs over a period of time and acts upon entities, which are defined by the class <tt>prov:Entity</tt>. The class <tt>fibo-fnd-arr-asmt:AssessmentActivity</tt> represents an assessment activity involving the evaluation and estimation of the economic indicators, which is a subclass of the class <tt>prov:Activity</tt>.
 The class  <tt>prov:Organization</tt> represents a governmental organization or a company that is associated with the assessment activity, which is a subclass of the class <tt>prov:Agent</tt>. </p>
@@ -51,7 +51,7 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 </details>
 
 <details>
-<summary>Further extensions</summary>
+<summary><b style="background-color: lightgrey">Further extensions</b></summary>
 <ul>
 <li><tt>dc:subject</tt> represents a topic of a tweet resulting from topic modeling.</li>
 <li> <tt>wna:neutral-emotion</tt>  represents the neutral sentiment of the tweet by applying sentiment analysis.</li>
@@ -92,7 +92,7 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 [source](https://ec.europa.eu/eurostat/databrowser/view/tps00191/default/table?lang=en) 
 
 <details>
-<summary>Table</summary>
+<summary><b style="background-color:lightgrey">  Table  </b></summary>
 
 <table>
 <thead>
@@ -252,7 +252,7 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 
 #### Selecting Migration-related Tweets
 <details>
-<summary>Detail</summary>
+<summary><b style="background-color:lightgrey">Detail</b></summary>
 <p>
 Green referes to migration-related topics, and orange refers to other topics. 
 MGPS refers to the maximal migration-related topic probaiblity score.
@@ -271,7 +271,7 @@ The migration-related tweets are chosen with the help of the probabilities
 associated to all the topics. Regarding the chosen topics, 
 the maximal probability score for each tweet is extracted. 
 
-For this tweet, it has the **maximal migration-related topic probability score (MGPS)** 0.8.
+For this tweet, it has the <b>maximal migration-related topic probability score (MGPS)</b> 0.8.
 
 By manual evaluation, the threshold for reserving the tweets by the maximal probability score is set to 0.45. Hence, 
 the tweet showed in the Figure is reserved for further analysis.
@@ -281,14 +281,14 @@ the tweet showed in the Figure is reserved for further analysis.
 
 
 <details>
-<summary>The distribution of maximal probability scores of tweets regarding migration-related topics before filtering</summary>
+<summary><b style="background-color:lightgrey">The distribution of maximal probability scores of tweets regarding migration-related topics before filtering</b></summary>
 <a href="images/tm_filter/dist_topic_max_scores_50.png">
 <img src="images/tm_filter/dist_topic_max_scores_50.png" alt="dist_before_filtering">
 </a>
 </details>
 
 <details>
-<summary>The distribution of maximal probability scores of tweets regarding migration-related topics after filtering</summary>
+<summary><b style="background-color:lightgrey">The distribution of maximal probability scores of tweets regarding migration-related topics after filtering</b></summary>
 <a href="images/tm_filter/dist_topic_max_scores_50_t4.5.png">
 <img src="images/tm_filter/dist_topic_max_scores_50_t4.5.png" alt="dist_after_filtering">
 </a>
@@ -311,7 +311,7 @@ unemployment rate, from 2013 to 2018 and from 2019 to 2020. In 2019, the percent
 are rapidly increased by about 2% and 1% respectively compared to 2018.
 
 <details>
-<summary>Figure</summary>
+<summary><b style="background-color:lightgrey">Figure</b> </summary>
 <a href="images/stats/percentage_correlations/ALL.png">
 <img src="images/stats/percentage_correlations/ALL.png" alt="percentage_coorelations">
 </a>
@@ -363,7 +363,7 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
 [comment]: <> (![]&#40;images/sparql_query_results/top20_hashtags_refugee_immigrant.png&#41;)
 
 <details>
-<summary> Answer </summary>
+<summary><b style="background-color:lightgrey">Answer</b> </summary>
 <a href="images/sparql_query_results/top20_hashtags_refugee_immigrant.png">
 <img src="images/sparql_query_results/top20_hashtags_refugee_immigrant.png" alt="top20_hashtags_refugee_immigrant">
 </a>
@@ -379,7 +379,7 @@ SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
  }GROUP BY ?entityLabel ORDER BY DESC(?numOfEntityMentions) LIMIT 10
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/entity_mentions_containing_refugee.png">
 <img src="images/sparql_query_results/entity_mentions_containing_refugee.png" alt="entity_mentions_containing_refugee">
 </a>
@@ -403,7 +403,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 ```
 
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/emotions_entity_containing_refugee_camp.png">
 <img src="images/sparql_query_results/emotions_entity_containing_refugee_camp.png" alt="emotions_entity_containing_refugee_camp">
 </a>
@@ -426,7 +426,7 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 ```
 
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png">
 <img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png" alt="top10_coocur_hashtags_with_entity_refugee">
 </a>
@@ -451,7 +451,7 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 ```
 
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/gdpr_hate_speech_GB.png">
 <img src="images/sparql_query_results/gdpr_hate_speech_GB.png" alt="gdpr_hate_speech_GB">
 </a>
@@ -473,7 +473,7 @@ SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?nu
  }GROUP BY ?year ORDER BY DESC(?year)
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/avgRGDPR_hate.png">
 <img src="images/sparql_query_results/avgRGDPR_hate.png" alt="avgRGDPR_hate">
 </a>
@@ -491,7 +491,7 @@ SELECT ?EntityLabel(count(?EntityLabel) as ?NumberOfMentions)   where{
  }GROUP BY ?EntityLabel ORDER BY DESC(?NumberOfMentions)
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/num_of_entities_refugee_camp.png">
 <img src="images/sparql_query_results/num_of_entities_refugee_camp.png" alt="num_of_entities_refugee_camp">
 </a>
@@ -513,7 +513,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
  } GROUP BY ?EmotionCategory
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png">
 <img src="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png" alt="emotion_category_hashtag_containing_refugee">
 </a>
@@ -535,7 +535,7 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
  }GROUP BY ?year ?IndicatorValue ORDER BY DESC(?year)
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/negative-emotion-gdpr-GB.png">
 <img src="images/sparql_query_results/negative-emotion-gdpr-GB.png" alt="negative-emotion-gdpr-GB">
 </a>
@@ -557,7 +557,7 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 } GROUP BY ?hastagLabel ORDER BY DESC(?num) LIMIT 10
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png">
 <img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png" alt="top10_coocur_hashtags_with_entity_refugee_camp">
 </a>
@@ -580,7 +580,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png">
 <img src="images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png" alt="emotion_categories_hashtag_refugee_camp">
 </a>
@@ -599,7 +599,7 @@ SELECT (count(?tweet) as ?num)   where{
  }
 ```
 <details>
-<summary>Answer</summary>
+<summary><b style="background-color:lightgrey">Answer</b></summary>
 <a href="images/sparql_query_results/num_of_tweets_entity_zaatari.png">
 <img src="images/sparql_query_results/num_of_tweets_entity_zaatari.png" alt="num_of_tweets_entity_zaatari">
 </a>
