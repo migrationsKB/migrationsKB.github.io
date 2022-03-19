@@ -88,28 +88,41 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 
 ## 5. MGKB Classes and Properties 
 
+<hr>
 
-[### Class: mgkb:EconomicIndicators](https://migrationskb.github.io/MGKB#EconomicIndicators)
+<a id="EconomicIndicators" style="color:black; font-size:22px">Class: mgkb:EconomicIndicators </a>
 
 EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
 and income.
 
-<a id="UnemploymentRate"> <h3>Class: mgkb:UnemploymentRate </h3> </a>
-
-<a id="LongTermUnemploymentRate"><h3>Class: mgkb:LongTermUnemploymentRate</h3></a>
-
-[Class: mgkb:TotalUnemploymentRate](https://migrationskb.github.io/MGKB#TotalUnemploymentRate)
-
-[Class: mgkb:YouthUnemploymentRate](https://migrationskb.github.io/MGKB#YouthUnemploymentRate)
-
-[Class: mgkb:Income](https://migrationskb.github.io/MGKB#Income)
-
-[Class: mgkb:DisposableIncome](https://migrationskb.github.io/MGKB#DisposableIncome)
-
-[mgkb:offensive](https://migrationskb.github.io/MGKB#offensive)
+<hr>
+<a id="UnemploymentRate" style="color:black; font-size:22px">Class: mgkb:UnemploymentRate</a>
 
 
-[Class: mgkb:normal](https://migrationskb.github.io/MGKB#normal)
+<hr>
+
+<a id="LongTermUnemploymentRate" style="color:black; font-size:22px">Class: mgkb:LongTermUnemploymentRate</a>
+
+<hr>
+
+<a id="TotalUnemploymentRate" style="color:black;font-size:22px">Class: mgkb:TotalUnemploymentRate</a>
+
+<hr>
+
+<a id="YouthUnemploymentRate" style="color:black;font-size:22px">Class: mgkb:YouthUnemploymentRate</a>
+
+<hr>
+
+<a id="Income" style="color:black;font-size:22px">Class: mgkb:Income</a>
+
+<hr>
+<a id="DisposableIncome" style="color:black;font-size:22px">Class: mgkb:DisposableIncome</a>
+
+<hr>
+<a id="offensive" style="color:black;font-size:22px">mgkb:offensive</a>
+
+<hr>
+<a id="normal" style="color:black;font-size:22px">mgkb:normal</a>
 
 
 ## 6. Statistics and Plots
