@@ -92,7 +92,7 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 [Class: mgkb:EconomicIndicators](#EconomicIndicators)
 EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
 and income.
-
+<a href="https://migrationskb.github.io/MGKB/#EconomicIndicators">Class: mgkb:EconomicIndicators </a>
 
 
 [Class: mgkb:UnemploymentRate](#UnemploymentRate)
