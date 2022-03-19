@@ -94,13 +94,9 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
 and income.
 
+<a id="UnemploymentRate"> <h3>Class: mgkb:UnemploymentRate </h3> </a>
 
-[Class: mgkb:UnemploymentRate](https://migrationskb.github.io/MGKB#UnemploymentRate)
-
-<a id="unemploymentrate"> mgkb:UnemploymentRate </a>
-
-
-[Class: mgkb:LongTermUnemploymentRate](https://migrationskb.github.io/MGKB#LongTermUnemploymentRate)
+<a id="LongTermUnemploymentRate"><h3>Class: mgkb:LongTermUnemploymentRate</h3></a>
 
 [Class: mgkb:TotalUnemploymentRate](https://migrationskb.github.io/MGKB#TotalUnemploymentRate)
 
