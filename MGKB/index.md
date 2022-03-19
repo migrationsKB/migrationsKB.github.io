@@ -1,7 +1,7 @@
-# MigrationsKB
+# MigrationsKB 
 
 
-## Introduction
+## 1. Introduction 
 
 **MigrationsKB(MGKB)** is a public Knowledge Base of anonymized **Migration** related **annotated** tweets.
 The MGKB currently contains over **200 thousand** tweets, spanning over 9 years (January 2013 to July 2021),
@@ -15,8 +15,8 @@ such as GDP Growth Rate, are connected with each Tweet in RDF using geographical
 The user IDs and the tweet texts are encrypted for privacy purposes, while the tweet IDs are preserved.
 
 
-## RDF/S Model
-### Overall Schema
+##  2. [RDF/S Model](#rdfs_model)
+### Overall Schema 
 ![](images/migrationKB_schema.png)
 
 ### Schema for Economic Indicators and Provenance Information
@@ -73,22 +73,49 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 
 :page_with_curl: [Technical Report (arXiv)](https://arxiv.org/pdf/2108.07593.pdf) 
 
-## Overall Framework
-![](images/overall-framework.png)
+## 3. Overall Framework
+![](images/mgkb_pipeline.png)
 
 
 
-## Purpose
+## 3. Purpose
 * Provide query-able resource about public attitudes on social media towards migration
 * Provide an insight into which factors in terms of economic indicators are the driving factors of that attitude.
 
-## Geo Map of The Tweets
+## 4. Geo Map of The Tweets
 <iframe width="100%" height="520" frameborder="0" src="https://migrationskb.carto.com/builder/55b7655b-30de-41c9-9e09-2ab30284c225/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 [Download `MapOfTweets`](data/MapOfTweets.carto)
 
-## Statistics and Plots
+## 5. MGKB Classes and Properties 
 
-### 1. Statistics of the EU countries with the most first time asylum applicants
+
+[Class: mgkb:EconomicIndicators](#EconomicIndicators)
+EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
+and income.
+
+
+
+[Class: mgkb:UnemploymentRate](#UnemploymentRate)
+
+[Class: mgkb:LongTermUnemploymentRate](#LongTermUnemploymentRate)
+
+[Class: mgkb:TotalUnemploymentRate](#TotalUnemploymentRate)
+
+[Class: mgkb:YouthUnemploymentRate](#YouthUnemploymentRate)
+
+[Class: mgkb:Income](#Income)
+
+[Class: mgkb:DisposableIncome](#DisposableIncome)
+
+[mgkb:offensive](#offensive)
+
+
+[Class: mgkb:normal](#normal)
+
+
+## 6. Statistics and Plots
+
+### 6.1. Statistics of the EU countries with the most first time asylum applicants
 [source](https://ec.europa.eu/eurostat/databrowser/view/tps00191/default/table?lang=en) 
 
 <details>
@@ -248,7 +275,7 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 
 </details>
 
-### 2. Statistics of Tweets before and after ETM
+### 6.2. Statistics of Tweets before and after ETM
 
 #### Selecting Migration-related Tweets
 <details>
@@ -295,7 +322,7 @@ the tweet showed in the Figure is reserved for further analysis.
 </details>
 
 
-### 3. Correlations of the Negative Public Attitudes and The Economic Indicators
+### 6.3. Correlations of the Negative Public Attitudes and The Economic Indicators
 More [plots for each destination country](stats.md)
 
 To learn the potential cause of the negative public attitudes towards migrations, the factors such as unemployment
@@ -319,7 +346,7 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 
 
 
-## Sparql Queries
+## 7. Sparql Queries
 * **Online SPARQL endpoint Query [example](virtuoso.md)**.
 
 * Locally 
@@ -350,7 +377,7 @@ prefix wna: <http://www.gsi.dit.upm.es/ontologies/wnaffect/ns#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 ```
 
-#### 1. The following query retrieve a list of top 20 hashtags which contain "refugee" or "immigrant".
+#### 7.1. The following query retrieve a list of top 20 hashtags which contain "refugee" or "immigrant".
 ```sparql 
 SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
   ?tweet schema:mentions ?hashtag.
@@ -369,7 +396,7 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
 </a>
 </details>
 
-#### 2. The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
+#### 7.2. The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
 ```sparql
 SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 	?tweet schema:mentions ?entity.
@@ -387,7 +414,7 @@ SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 [comment]: <> (<img src="images/sparql_query_results/entity_mentions_containing_refugee.png" width="400px"/>)
 
 
-#### 3. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugee camp".
+#### 7.3. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugee camp".
  
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
@@ -410,7 +437,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 [comment]: <> (<img src="images/sparql_query_results/emotions_entity_containing_refugee_camp.png" width="400px" />)
 
-#### 4. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee".
+#### 7.4. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee".
 
 ```sparql
 SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
@@ -434,7 +461,7 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 [comment]: <> (![]&#40;images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png&#41;)
 
-#### 5. The following query retrieves GDPR indicator values and the number of tweet hate speeches in the United Kingdom.
+#### 7.5. The following query retrieves GDPR indicator values and the number of tweet hate speeches in the United Kingdom.
 ```sparql
 SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -457,7 +484,7 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 
 [comment]: <> (<img src="images/sparql_query_results/gdpr_hate_speech_GB.png" width="400px" />)
 
-#### 6. The following query retrieves average GDPR indicator values and the number of tweet hate speeches in 11 destination countries.
+#### 7.6. The following query retrieves average GDPR indicator values and the number of tweet hate speeches in 11 destination countries.
 ```sparql
 SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -479,7 +506,7 @@ SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?nu
 
 [comment]: <> (<img src="images/sparql_query_results/avgRGDPR_hate.png" width="400px" />)
 
-#### 7. The following query retrieve a list of all the entity labels which contain "refugee camp" and its frequency of detected entity mentions.
+#### 7.7. The following query retrieve a list of all the entity labels which contain "refugee camp" and its frequency of detected entity mentions.
 ```sparql
 SELECT ?EntityLabel(count(?EntityLabel) as ?NumberOfMentions)   where{
 	?tweet schema:mentions ?entity.
@@ -499,7 +526,7 @@ SELECT ?EntityLabel(count(?EntityLabel) as ?NumberOfMentions)   where{
 
 
 
-#### 8. The following query retrieve emotions regarding the hashtags containing "refugee".
+#### 7.8. The following query retrieve emotions regarding the hashtags containing "refugee".
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 	?tweet schema:mentions ?hashtag.
@@ -518,7 +545,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 [comment]: <> (<img src="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png" width="400px" />)
 
-#### 9. The following query retrieves GDPR indicator values and the number of negative sentiment tweets in the United Kingdom.
+#### 7.9. The following query retrieves GDPR indicator values and the number of negative sentiment tweets in the United Kingdom.
 ```sparql
 SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -541,7 +568,7 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 [comment]: <> (<img src="images/sparql_query_results/negative-emotion-gdpr-GB.png" width="400px" />)
 
 
-#### 10. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee camp".
+#### 7.10. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee camp".
 
 ```sparql
 SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
@@ -563,7 +590,7 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 [comment]: <> (<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png" width="300px" />)
 
-#### 11. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugeecamp".
+#### 7.11. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugeecamp".
 
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
@@ -586,7 +613,7 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 [comment]: <> (<img src="images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png" width="400px" />)
 
 
-#### 12. The following query retrieves the number of tweets about a particular refugee camp "zaatari refugee camp".
+#### 7.12. The following query retrieves the number of tweets about a particular refugee camp "zaatari refugee camp".
 ```sparql
 SELECT (count(?tweet) as ?num)   where{
 	?tweet schema:mentions ?entity.
