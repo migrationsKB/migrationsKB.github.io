@@ -89,28 +89,27 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 ## 5. MGKB Classes and Properties 
 
 
-[Class: mgkb:EconomicIndicators](#EconomicIndicators)
+[Class: mgkb:EconomicIndicators](https://migrationskb.github.io/MGKB#EconomicIndicators)
 EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
 and income.
-<a href="https://migrationskb.github.io/MGKB/#EconomicIndicators">Class: mgkb:EconomicIndicators </a>
 
 
-[Class: mgkb:UnemploymentRate](#UnemploymentRate)
+[Class: mgkb:UnemploymentRate](https://migrationskb.github.io/MGKB#UnemploymentRate)
 
-[Class: mgkb:LongTermUnemploymentRate](#LongTermUnemploymentRate)
+[Class: mgkb:LongTermUnemploymentRate](https://migrationskb.github.io/MGKB#LongTermUnemploymentRate)
 
-[Class: mgkb:TotalUnemploymentRate](#TotalUnemploymentRate)
+[Class: mgkb:TotalUnemploymentRate](https://migrationskb.github.io/MGKB#TotalUnemploymentRate)
 
-[Class: mgkb:YouthUnemploymentRate](#YouthUnemploymentRate)
+[Class: mgkb:YouthUnemploymentRate](https://migrationskb.github.io/MGKB#YouthUnemploymentRate)
 
-[Class: mgkb:Income](#Income)
+[Class: mgkb:Income](https://migrationskb.github.io/MGKB#Income)
 
-[Class: mgkb:DisposableIncome](#DisposableIncome)
+[Class: mgkb:DisposableIncome](https://migrationskb.github.io/MGKB#DisposableIncome)
 
-[mgkb:offensive](#offensive)
+[mgkb:offensive](https://migrationskb.github.io/MGKB#offensive)
 
 
-[Class: mgkb:normal](#normal)
+[Class: mgkb:normal](https://migrationskb.github.io/MGKB#normal)
 
 
 ## 6. Statistics and Plots
