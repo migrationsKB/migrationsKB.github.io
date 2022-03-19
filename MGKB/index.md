@@ -86,17 +86,28 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 <iframe width="100%" height="520" frameborder="0" src="https://migrationskb.carto.com/builder/55b7655b-30de-41c9-9e09-2ab30284c225/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 [Download `MapOfTweets`](data/MapOfTweets.carto)
 
-## 5. MGKB Classes and Properties 
+## 5. MGKB at a glance
+**Classes**: <a href="https://migrationskb.github.io/MGKB/#EconomicIndicators">EconomicIndicators </a>|
+<a href="https://migrationskb.github.io/MGKB/#UnemploymentRate">UnemploymentRate </a>|
+<a href="https://migrationskb.github.io/MGKB/#LongTermUnemploymentRate">LongTermUnemploymentRate </a>|
+<a href="https://migrationskb.github.io/MGKB/#TotalUnemploymentRate">TotalUnemploymentRate </a>|
+<a href="https://migrationskb.github.io/MGKB/#YouthUnemploymentRate">YouthUnemploymentRate </a>|
+<a href="https://migrationskb.github.io/MGKB/#Income">Income </a>|
+<a href="https://migrationskb.github.io/MGKB/#DisposableIncome">DisposableIncome </a>|
+
+**Individuals**: <a href="https://migrationskb.github.io/MGKB/#offensive">offensive </a>|
+<a href="https://migrationskb.github.io/MGKB/#normal">normal </a>
+
+
+### 5.1 MGKB Classes and Properties 
 
 <a id="EconomicIndicators" style="color:black;font-weight:bold;font-size:20px">Class: mgkb:EconomicIndicators </a>
 
 * Description: EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
 and income.
-
 * Sub-classes: <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/UnemploymentRate">fibo-ind-ei-ei:UnemploymentRate</a>,
 <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GrossDomesticProduct">fibo-ind-ei-ei:GrossDomesticProduct</a>, 
 <a href="https://migrationskb.github.io/MGKB/#Income">mgkb:Income</a>
-
 * In domain of:
 <a href="http://www.w3.org/ns/prov#wasGeneratedBy">prov1:wasGeneratedBy</a>,
 <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
@@ -105,13 +116,10 @@ and income.
 <a id="UnemploymentRate" style="color:black;font-weight:bold; font-size:20px">Class: mgkb:UnemploymentRate</a>
 
 * Description: an economic indicator representing the ratio of the unemployed population with respect to the civilian labor force of a given economy for some specified period.
-
 * Super-classes: <a href="https://migrationsKB.github.io/MGKB#EconomicIndicators">mgkb:EconomicIndicators</a>
-
 * Sub-classes: <a href="https://migrationsKB.github.io/MGKB#TotalUnemploymentRate">mgkb:TotalUnemploymentRate</a>,
 <a href="https://migrationsKB.github.io/MGKB#LongTermUneploymentRate">mgkb:LongTermUneploymentRate</a>,
 <a href="https://migrationsKB.github.io/MGKB#YouthUnemploymentRate">mgkb:YouthUnemploymentRate</a>
-
 * In range of: 
 <a href="https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isCharacterizedBy">fibo-fnd-rel-rel:isCharacterizedBy</a>
 
