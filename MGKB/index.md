@@ -88,42 +88,99 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 
 ## 5. MGKB Classes and Properties 
 
-<hr>
+<a id="EconomicIndicators" style="color:black;font-weight:bold;font-size:20px">Class: mgkb:EconomicIndicators </a>
 
-<a id="EconomicIndicators" style="color:black; font-size:22px">Class: mgkb:EconomicIndicators </a>
-
-EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
+* Description: EconomicIndicators- Represent the economic indicators such as unemployment rate, gross domestic product growth rate,
 and income.
 
-<hr>
-<a id="UnemploymentRate" style="color:black; font-size:22px">Class: mgkb:UnemploymentRate</a>
+* Sub-classes: <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/UnemploymentRate">fibo-ind-ei-ei:UnemploymentRate</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GrossDomesticProduct">fibo-ind-ei-ei:GrossDomesticProduct</a>, 
+<a href="https://migrationskb.github.io/MGKB/#Income">mgkb:Income</a>
 
-
-<hr>
-
-<a id="LongTermUnemploymentRate" style="color:black; font-size:22px">Class: mgkb:LongTermUnemploymentRate</a>
-
-<hr>
-
-<a id="TotalUnemploymentRate" style="color:black;font-size:22px">Class: mgkb:TotalUnemploymentRate</a>
+* In domain of:
+<a href="http://www.w3.org/ns/prov#wasGeneratedBy">prov1:wasGeneratedBy</a>,
+<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
 
 <hr>
+<a id="UnemploymentRate" style="color:black;font-weight:bold; font-size:20px">Class: mgkb:UnemploymentRate</a>
 
-<a id="YouthUnemploymentRate" style="color:black;font-size:22px">Class: mgkb:YouthUnemploymentRate</a>
+* Description: an economic indicator representing the ratio of the unemployed population with respect to the civilian labor force of a given economy for some specified period.
+
+* Super-classes: <a href="https://migrationsKB.github.io/MGKB#EconomicIndicators">mgkb:EconomicIndicators</a>
+
+* Sub-classes: <a href="https://migrationsKB.github.io/MGKB#TotalUnemploymentRate">mgkb:TotalUnemploymentRate</a>,
+<a href="https://migrationsKB.github.io/MGKB#LongTermUneploymentRate">mgkb:LongTermUneploymentRate</a>,
+<a href="https://migrationsKB.github.io/MGKB#YouthUnemploymentRate">mgkb:YouthUnemploymentRate</a>
+
+* In range of: 
+<a href="https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isCharacterizedBy">fibo-fnd-rel-rel:isCharacterizedBy</a>
+
 
 <hr>
 
-<a id="Income" style="color:black;font-size:22px">Class: mgkb:Income</a>
+<a id="LongTermUnemploymentRate" style="color:black;font-weight:bold; font-size:20px">Class: mgkb:LongTermUnemploymentRate</a>
+* Description: Total long term (12 months or more) unemployment rate, All ISCED 2011 levels (Education all levels)
+* Super-classes: <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/UnemploymentRate">fibo-ind-ei-ei:UnemploymentRate</a>
+* In domain of: <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/hasDurationOfUnemployment">fibo-ind-ei-ei:hasDurationOfUnemployment</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/hasArgument">fibo-fnd-utl-alx:hasArgument</a>
 
 <hr>
-<a id="DisposableIncome" style="color:black;font-size:22px">Class: mgkb:DisposableIncome</a>
+
+<a id="TotalUnemploymentRate" style="color:black;font-weight:bold;font-size:20px">Class: mgkb:TotalUnemploymentRate</a>
+* Description: The unemployment rate which of the active population aged from 15 to 74 years old. PC_ACT: Percentage of population in the active labor force
+* Super-classes: <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/UnemploymentRate">fibo-ind-ei-ei:UnemploymentRate</a>
+* In domain of: <a href="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/hasReportDate">fibo-fnd-arr-rep:hasReportDate</a>,
+<a href="http://schema.org/addressCountry">schema:addressCountry</a>,
+<a href="http://purl.org/dc/elements/1.1/date">dc:date</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/hasIndicatorValue">fibo-ind-ei-ei:hasIndicatorValue</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/hasArgument">fibo-fnd-utl-alx:hasArgument</a>
+
+
 
 <hr>
-<a id="offensive" style="color:black;font-size:22px">mgkb:offensive</a>
+
+<a id="YouthUnemploymentRate" style="color:black;font-weight:bold;font-size:20px">Class: mgkb:YouthUnemploymentRate</a>
+
+* Description: The unemployment rate which of the active population aged from 15 to 24 years old.
+* Super-classes: <a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/UnemploymentRate">fibo-ind-ei-ei:UnemploymentRate</a>
+* In domain of:
+<a href="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/hasReportDate">fibo-fnd-arr-rep:hasReportDate</a>,
+<a href="http://schema.org/addressCountry">schema:addressCountry</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/hasArgument">fibo-fnd-utl-alx:hasArgument</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/hasIndicatorValue">fibo-ind-ei-ei:hasIndicatorValue</a>,
+<a href="http://purl.org/dc/elements/1.1/date">dc:date</a>
+
 
 <hr>
-<a id="normal" style="color:black;font-size:22px">mgkb:normal</a>
 
+<a id="Income" style="color:black;font-weight:bold;font-size:20px">Class: mgkb:Income</a>
+
+* Description: Income of households.
+* Super-classes: <a href="https://migrationsKB.github.io/MGKB#EconomicIndicators">mgkb:EconomicIndicators</a>
+* Sub-classes: <a href="https://migrationsKB.github.io/MGKB#DisposableIncome">mgkb:DisposableIncome</a>
+* In range of: <a href="https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isCharacterizedBy">fibo-fnd-rel-rel:isCharacterizedBy</a>
+
+
+<hr>
+<a id="DisposableIncome" style="color:black;font-weight:bold;font-size:20px">Class: mgkb:DisposableIncome</a>
+
+* Description: Disposable income, net Euro per habitant, Balance.
+* Super-classes: <a href="https://migrationsKB.github.io/MGKB#Income">mgkb:Income</a>
+* In domain of: <a href="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/hasReportDate">fibo-fnd-arr-rep:hasReportDate</a>,
+<a href="http://schema.org/addressCountry">schema:addressCountry</a>,
+<a href="http://purl.org/dc/elements/1.1/date">dc:date</a>,
+<a href="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount">fibo-fnd-acc-cat:hasMonetaryAmount</a>
+
+
+<hr>
+<a id="offensive" style="color:black;font-weight:bold;font-size:20px">mgkb:offensive</a>
+* Description: Named individual, represents offensive speeches resulted from hate speech detection.
+* Classes: <a href="http://www.gsi.dit.upm.es/ontologies/onyx/ns#EmotionCategory">onyx:EmotionCategory</a>
+
+<hr>
+<a id="normal" style="color:black;font-weight:bold;font-size:20px">mgkb:normal</a>
+* Description: Named individual, represents normal speeches resulted from hate speech detection.
+* Classes: <a href="http://www.gsi.dit.upm.es/ontologies/onyx/ns#EmotionCategory">onyx:EmotionCategory</a>
 
 ## 6. Statistics and Plots
 
