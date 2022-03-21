@@ -461,7 +461,7 @@ and offensive/hate speeches.
 
 * Prefixes:
 ```sparql
-prefix mgkb: <https://migrationskb.github.io/MGKB#> 
+prefix mgkb: <https://migrationsKB.github.io/MGKB#> 
 prefix dc: <http://purl.org/dc/elements/1.1/> 
 prefix fibo_fnd_arr_asmt: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/> 
 prefix fibo_fnd_arr_rep: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/> 
@@ -469,6 +469,7 @@ prefix fibo_fnd_dt_fd: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTi
 prefix fibo_fnd_rel_rel: <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/> 
 prefix fibo_fnd_utl_alx: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/> 
 prefix fibo_ind_ei_ei: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/> 
+prefix fibo_ind_acc_cat: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/>
 prefix nee: <http://www.ics.forth.gr/isl/oae/core#> 
 prefix onyx: <http://www.gsi.dit.upm.es/ontologies/onyx/ns#> 
 prefix owl: <http://www.w3.org/2002/07/owl#> 
@@ -480,6 +481,8 @@ prefix sioc: <http://rdfs.org/sioc/ns#>
 prefix sioc_t: <http://rdfs.org/sioc/types#> 
 prefix wna: <http://www.gsi.dit.upm.es/ontologies/wnaffect/ns#> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix lcc_lr: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/>
+prefix cidoc_crm: <https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#>
 ```
 
 #### 7.1. The following query retrieve a list of top 20 hashtags which contain "refugee" or "immigrant".
