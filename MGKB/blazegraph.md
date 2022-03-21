@@ -31,6 +31,10 @@ java -server -Xmx4g -jar blazegraph.jar
 
 * Once it started, the default workbench location is http://localhost:9999/blazegraph/
 
+### Load data
+`load <file:path_to_file>` in "update"
+
+
 #### For more details in `quick start`
 * https://github.com/blazegraph/database/wiki/Quick_Start
   

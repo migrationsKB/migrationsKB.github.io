@@ -355,32 +355,54 @@ and income.
 ### 6.2. Statistics of Tweets before and after ETM
 
 #### Selecting Migration-related Tweets
-<details>
-<summary><b style="background-color:lightgrey">Detail</b></summary>
-<p>
-Green referes to migration-related topics, and orange refers to other topics. 
-MGPS refers to the maximal migration-related topic probaiblity score.
 
-<a href="images/tm_filter/tweet_filtering.png">
-<img src="images/tm_filter/tweet_filtering.png" alt="tweet filtering">
-</a>
+[//]: # (<details>)
 
-The tweets are then refined based on topic embeddings.
-For each topic, the  <a href="https://bit.ly/2SZgpKb">top 20 words</a> (ranked by their probability) are 
-selected as representatives of the topic. 
-These words are then manually verified based on their relevance to the topic 
-of migration, accordingly, <a href="https://bit.ly/30z25wp">the migration-related topics</a> are 
-chosen. 
-The migration-related tweets are chosen with the help of the probabilities 
-associated to all the topics. Regarding the chosen topics, 
-the maximal probability score for each tweet is extracted. 
+[//]: # (<summary><b style="background-color:lightgrey">Detail</b></summary>)
 
-For this tweet, it has the <b>maximal migration-related topic probability score (MGPS)</b> 0.8.
+[//]: # (<p>)
 
-By manual evaluation, the threshold for reserving the tweets by the maximal probability score is set to 0.45. Hence, 
-the tweet showed in the Figure is reserved for further analysis.
-</p>
-</details>
+[//]: # (Green referes to migration-related topics, and orange refers to other topics. )
+
+[//]: # (MGPS refers to the maximal migration-related topic probaiblity score.)
+
+[//]: # ()
+[//]: # (<a href="images/tm_filter/tweet_filtering.png">)
+
+[//]: # (<img src="images/tm_filter/tweet_filtering.png" alt="tweet filtering">)
+
+[//]: # (</a>)
+
+[//]: # ()
+[//]: # (The tweets are then refined based on topic embeddings.)
+
+[//]: # (For each topic, the  <a href="https://bit.ly/2SZgpKb">top 20 words</a> &#40;ranked by their probability&#41; are )
+
+[//]: # (selected as representatives of the topic. )
+
+[//]: # (These words are then manually verified based on their relevance to the topic )
+
+[//]: # (of migration, accordingly, <a href="https://bit.ly/30z25wp">the migration-related topics</a> are )
+
+[//]: # (chosen. )
+
+[//]: # (The migration-related tweets are chosen with the help of the probabilities )
+
+[//]: # (associated to all the topics. Regarding the chosen topics, )
+
+[//]: # (the maximal probability score for each tweet is extracted. )
+
+[//]: # ()
+[//]: # (For this tweet, it has the <b>maximal migration-related topic probability score &#40;MGPS&#41;</b> 0.8.)
+
+[//]: # ()
+[//]: # (By manual evaluation, the threshold for reserving the tweets by the maximal probability score is set to 0.45. Hence, )
+
+[//]: # (the tweet showed in the Figure is reserved for further analysis.)
+
+[//]: # (</p>)
+
+[//]: # (</details>)
 
 
 
@@ -420,6 +442,12 @@ are rapidly increased by about 2% and 1% respectively compared to 2018.
 <img src="images/stats/percentage_correlations/ALL.png" alt="percentage_coorelations">
 </a>
 </details>
+
+The following figure shows the pairwise correlation between the economic indicators and the posts with negative sentiments
+and offensive/hate speeches.
+
+![](images/01_pairwise_correlation.png)
+
 
 
 
