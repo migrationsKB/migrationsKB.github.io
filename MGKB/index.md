@@ -190,7 +190,11 @@ and income.
 * Description: Named individual, represents normal speeches resulted from hate speech detection.
 * Classes: <a href="http://www.gsi.dit.upm.es/ontologies/onyx/ns#EmotionCategory">onyx:EmotionCategory</a>
 
-## 6. Statistics and Plots
+
+<a id="stats_plots" style="color:black;font-weight:bold;font-size:20px">
+6. Statistics and Plots
+</a>
+
 
 ### 6.1. Statistics of the EU countries with the most first time asylum applicants
 [source](https://ec.europa.eu/eurostat/databrowser/view/tps00191/default/table?lang=en) 
@@ -419,6 +423,7 @@ and income.
 <img src="images/tm_filter/dist_topic_max_scores_50_t4.5.png" alt="dist_after_filtering">
 </a>
 </details>
+
 
 
 ### 6.3. Correlations of the Negative Public Attitudes and The Economic Indicators
