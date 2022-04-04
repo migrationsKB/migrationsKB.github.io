@@ -485,7 +485,10 @@ prefix lcc_lr: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/Currenc
 prefix cidoc_crm: <https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#>
 ```
 
-#### 7.1. The following query retrieve a list of top 20 hashtags which contain "refugee" or "immigrant".
+<a id="query_1" style="color:black;font-weight:bold;font-size:16px">
+7.1. The following query retrieve a list of top 20 hashtags which contain "refugee" or "immigrant".</a>
+
+
 ```sparql 
 SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
   ?tweet schema:mentions ?hashtag.
@@ -504,7 +507,12 @@ SELECT ?hashtagLabel (count(distinct ?tweet) as ?num) WHERE {
 </a>
 </details>
 
-#### 7.2. The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
+
+
+<a id="query_2" style="color:black;font-weight:bold;font-size:16px">
+7.2. The following query retrieve a list of top 10 the entity labels which contain "refugee" and its frequency of detected entity mentions.
+</a>
+
 ```sparql
 SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 	?tweet schema:mentions ?entity.
@@ -521,9 +529,11 @@ SELECT ?entityLabel (count(?entityLabel) as ?numOfEntityMentions)   where{
 
 [comment]: <> (<img src="images/sparql_query_results/entity_mentions_containing_refugee.png" width="400px"/>)
 
+<a id="query_3" style="color:black;font-weight:bold;font-size:16px">
+7.3. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugee camp".
+ </a>
 
-#### 7.3. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugee camp".
- 
+
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 	?tweet schema:mentions ?entity.
@@ -545,7 +555,10 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 [comment]: <> (<img src="images/sparql_query_results/emotions_entity_containing_refugee_camp.png" width="400px" />)
 
-#### 7.4. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee".
+
+<a id="query_4" style="color:black;font-weight:bold;font-size:16px">
+ 7.4. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee".
+</a>
 
 ```sparql
 SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
@@ -569,7 +582,12 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 [comment]: <> (![]&#40;images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee.png&#41;)
 
-#### 7.5. The following query retrieves GDPR indicator values and the number of tweet hate speeches in the United Kingdom.
+
+<a id="query_5" style="color:black;font-weight:bold;font-size:16px">
+7.5. The following query retrieves GDPR indicator values and the number of tweet hate speeches in the United Kingdom.
+</a>
+
+
 ```sparql
 SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -592,7 +610,11 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 
 [comment]: <> (<img src="images/sparql_query_results/gdpr_hate_speech_GB.png" width="400px" />)
 
-#### 7.6. The following query retrieves average GDPR indicator values and the number of tweet hate speeches in 11 destination countries.
+
+<a id="query_6" style="color:black;font-weight:bold;font-size:16px">
+7.6. The following query retrieves average GDPR indicator values and the number of tweet hate speeches in 11 destination countries.
+</a>
+
 ```sparql
 SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -614,7 +636,10 @@ SELECT  ?year (AVG(?IndicatorValue) AS ?avgIndicatorValue) (count(?tweet) as ?nu
 
 [comment]: <> (<img src="images/sparql_query_results/avgRGDPR_hate.png" width="400px" />)
 
-#### 7.7. The following query retrieve a list of all the entity labels which contain "refugee camp" and its frequency of detected entity mentions.
+<a id="query_7" style="color:black;font-weight:bold;font-size:16px">
+7.7. The following query retrieve a list of all the entity labels which contain "refugee camp" and its frequency of detected entity mentions.
+</a>
+
 ```sparql
 SELECT ?EntityLabel(count(?EntityLabel) as ?NumberOfMentions)   where{
 	?tweet schema:mentions ?entity.
@@ -633,8 +658,10 @@ SELECT ?EntityLabel(count(?EntityLabel) as ?NumberOfMentions)   where{
 [comment]: <> (<img src="images/sparql_query_results/num_of_entities_refugee_camp.png" width="400px" />)
 
 
+<a id="query_8" style="color:black;font-weight:bold;font-size:16px">
+7.8. The following query retrieve emotions regarding the hashtags containing "refugee".
+</a>
 
-#### 7.8. The following query retrieve emotions regarding the hashtags containing "refugee".
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 	?tweet schema:mentions ?hashtag.
@@ -653,7 +680,10 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 [comment]: <> (<img src="images/sparql_query_results/emotion_category_hashtag_containing_refugee.png" width="400px" />)
 
-#### 7.9. The following query retrieves GDPR indicator values and the number of negative sentiment tweets in the United Kingdom.
+<a id="query_9" style="color:black;font-weight:bold;font-size:16px">
+7.9. The following query retrieves GDPR indicator values and the number of negative sentiment tweets in the United Kingdom.
+</a>
+
 ```sparql
 SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
   ?tweet fibo_fnd_rel_rel:isCharacterizedBy ?gdpr.
@@ -675,8 +705,9 @@ SELECT  ?year ?IndicatorValue (count(?tweet) as ?numOfTweets) where {
 
 [comment]: <> (<img src="images/sparql_query_results/negative-emotion-gdpr-GB.png" width="400px" />)
 
-
-#### 7.10. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee camp".
+<a id="query_10" style="color:black;font-weight:bold;font-size:16px">
+7.10. The following query requests the top-10 hashtags co-occurring with the entity label containing "refugee camp".
+</a>
 
 ```sparql
 SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
@@ -698,7 +729,10 @@ SELECT ?hastagLabel (count(distinct ?tweet) as ?num) WHERE {
 
 [comment]: <> (<img src="images/sparql_query_results/top10_coocur_hashtags_with_entity_refugee_camp.png" width="300px" />)
 
-#### 7.11. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugeecamp".
+<a id="query_11" style="color:black;font-weight:bold;font-size:16px">
+7.11. The following query retrieves a list of emotion categories (neutral/positive/negative sentiment, and hate speeches/offensive/normal) of tweets where the labels of detected entity mentions containing "refugeecamp".
+</a>
+
 
 ```sparql
 SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
@@ -720,8 +754,10 @@ SELECT ?EmotionCategory (count(?tweet) as ?numOfTweets)   where{
 
 [comment]: <> (<img src="images/sparql_query_results/emotion_categories_hashtag_refugee_camp.png" width="400px" />)
 
+<a id="query_12" style="color:black;font-weight:bold;font-size:16px">
+7.12. The following query retrieves the number of tweets about a particular refugee camp "zaatari refugee camp".
+</a>
 
-#### 7.12. The following query retrieves the number of tweets about a particular refugee camp "zaatari refugee camp".
 ```sparql
 SELECT (count(?tweet) as ?num)   where{
 	?tweet schema:mentions ?entity.
