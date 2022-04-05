@@ -488,6 +488,7 @@ prefix wna: <http://www.gsi.dit.upm.es/ontologies/wnaffect/ns#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix lcc_lr: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/>
 prefix cidoc_crm: <https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#>
+prefix dcterms: <http://purl.org/dc/terms/>
 ```
 
 <a id="query_1" style="color:black;font-weight:bold;font-size:16px">
