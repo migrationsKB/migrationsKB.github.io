@@ -461,7 +461,7 @@ and offensive/hate speeches.
 
 * Locally 
   * Download `nt` file for **MGKB** on [Zenodo](https://zenodo.org/record/5206820#.YRqF1nUza0o). 
-  * Download and run [blazegraph](blazegraph.md)
+  * Download and run [Blazegraph](blazegraph.md) Or [GraphDB](https://www.ontotext.com/products/graphdb/)
 
 
 * Prefixes:
