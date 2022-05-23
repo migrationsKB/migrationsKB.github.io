@@ -79,7 +79,7 @@ The class  <tt>prov:Organization</tt> represents a governmental organization or 
 
 ## 3. Purpose
 * Provide query-able resource about public attitudes on social media towards migration
-* Provide an insight into which factors in terms of economic indicators are the driving factors of that attitude.
+* Provide an insight into which factors in terms of economic/social indicators are the driving factors of that attitude.
 
 ## 4. Geo Map of The Tweets
 <!-- <iframe width="100%" height="520" frameborder="0" src="https://migrationskb.carto.com/builder/55b7655b-30de-41c9-9e09-2ab30284c225/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
